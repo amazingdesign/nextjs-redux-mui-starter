@@ -1,25 +1,17 @@
-# Next.js example
+# nextjs-redux-mui-starter
 
-## How to use
+This repo is configured, and ready to use starter project with Next.JS and:
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+## pacakges
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs
-cd nextjs
-```
+- Material-UI
+- redux
+- redux-thunk
+- redux-rest-services - for managing rest endpoints in redux with ease
 
-Install it and run:
+## tools
 
-```sh
-npm install
-npm run dev
-```
-
-or:
-
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui-org/material-ui/tree/master/examples/nextjs)
-
-## The idea behind the example
-
-[Next.js](https://github.com/zeit/next.js) is a framework for server-rendered React apps.
+- Husky for GIT Hooks
+- Jest for testing
+- ESLint
+- Docker
