@@ -46,10 +46,29 @@ const UseServicePage = (props) => {
       <Typography>
         <br />
         This is content from{' '}
-        <a href={'https://randomuser.me/api'} target={'_blank'} rel={'noreferrer noopener'}>https://randomuser.me/api</a>{' '}
-        loaded by <a href={'https://github.com/amazingdesign/redux-rest-services'} target={'_blank'} rel={'noreferrer noopener'}>redux-rest-services</a>{' '}
+        <a
+          href={'https://randomuser.me/api'}
+          target={'_blank'}
+          rel={'noreferrer noopener'}
+        >
+          https://randomuser.me/api
+        </a>{' '}
+        loaded by
+        <a
+          href={'https://github.com/amazingdesign/redux-rest-services'}
+          target={'_blank'}
+          rel={'noreferrer noopener'}
+        >
+          redux-rest-services
+        </a>{' '}
         package using its{' '}
-        <a href={'https://bit.dev/amazingdesign/redux-rest-services/use-service'} target={'_blank'} rel={'noreferrer noopener'}>useService</a>{' '}
+        <a
+          href={'https://bit.dev/amazingdesign/redux-rest-services/use-service'}
+          target={'_blank'}
+          rel={'noreferrer noopener'}
+        >
+          useService
+        </a>{' '}
         hook.
         <br />
         <br />

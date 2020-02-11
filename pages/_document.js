@@ -60,8 +60,11 @@ MyDocument.getInitialProps = async ctx => {
   // Download env-config.js
   let envConfig = null
   try {
+    // eslint-disable-next-line no-undef
     envConfig = await axios(`${process.env.SELF_URL}/env-config.js`).then((response) => response.data)
-  } catch (error) { }
+  } catch (error) { 
+    console.error('Cant load /env-config.js to inline this script! Will be attached in head in <script> tag!')
+  }
 
   // Render app and page and get the context of the page with collected side effects.
   const sheets = new ServerStyleSheets()

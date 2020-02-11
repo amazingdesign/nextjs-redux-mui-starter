@@ -1,5 +1,5 @@
 /* eslint-disable max-lines */
-import makeRestServices, { crudActionsDeclarations, instances } from 'redux-rest-services'
+import makeRestServices, { crudActionsDeclarations } from 'redux-rest-services'
 
 import axios from './axios'
 import { addErrorHandler } from './restServicesErrorHandler'
@@ -23,7 +23,7 @@ const servicesDeclarations = [
         ))
       }
     },
-  }
+  },
 ]
 
 const restServicesDeclarationsWithErrorHandlers = addErrorHandler(servicesDeclarations)
