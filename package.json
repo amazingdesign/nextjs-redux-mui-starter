@@ -33,7 +33,8 @@
     "dev": "chmod +x ./env.sh && bash ./env.sh && mv env-config.js ./public/ && next",
     "start": "chmod +x ./env.sh && bash ./env.sh && mv env-config.js ./public/ && next start",
     "build": "next build",
-    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+    "eslint": "eslint .",
+    "fix": "eslint . --fix"
   },
   "bit": {
     "env": {
@@ -41,5 +42,12 @@
     },
     "componentsDefaultDirectory": "src/bits/{name}",
     "packageManager": "npm"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.8.0",
+    "eslint-plugin-jest": "^23.7.0",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react-hooks": "^2.3.0"
   }
 }
