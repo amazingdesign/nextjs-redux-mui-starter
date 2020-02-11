@@ -3,14 +3,14 @@ import { flashMessage, flashErrorMessage } from 'redux-flash'
 import axios from './axios'
 import { i18n } from './i18n'
 
-import { getConfigOrFailSSR } from '@bit/amazingdesign.utils.config'
+import { getConfigSSR } from '@bit/amazingdesign.utils.config'
 import { makeReduxAuth } from '@bit/amazingdesign.react-redux-mui-starter.make-redux-auth'
 import { makeAuthRequests } from '@bit/amazingdesign.react-redux-mui-starter.make-auth-requests'
 
-const LOG_IN_URL = getConfigOrFailSSR('REACT_APP_LOG_IN_URL')
-const REFRESH_TOKEN_URL = getConfigOrFailSSR('REACT_APP_REFRESH_TOKEN_URL')
-const FORGOT_PASSWORD_URL = getConfigOrFailSSR('REACT_APP_FORGOT_PASSWORD_URL')
-const RESET_PASSWORD_URL = getConfigOrFailSSR('REACT_APP_RESET_PASSWORD_URL')
+const LOG_IN_URL = getConfigSSR('REACT_APP_LOG_IN_URL')
+const REFRESH_TOKEN_URL = getConfigSSR('REACT_APP_REFRESH_TOKEN_URL')
+const FORGOT_PASSWORD_URL = getConfigSSR('REACT_APP_FORGOT_PASSWORD_URL')
+const RESET_PASSWORD_URL = getConfigSSR('REACT_APP_RESET_PASSWORD_URL')
 
 const t = i18n.t.bind(i18n)
 
