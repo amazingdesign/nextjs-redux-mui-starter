@@ -34,7 +34,10 @@
     "start": "chmod +x ./env.sh && bash ./env.sh && mv env-config.js ./public/ && next start",
     "build": "next build",
     "eslint": "eslint .",
-    "fix": "eslint . --fix"
+    "fix": "eslint . --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "bit": {
     "env": {
@@ -49,12 +52,23 @@
     "eslint-plugin-jest": "^23.7.0",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "husky": "^4.2.1"
+    "husky": "^4.2.1",
+    "jest": "^25.1.0"
   },
   "husky": {
     "hooks": {
       "pre-commit": "npm run fix",
       "pre-push": "npm test"
     }
+  },
+  "jest": {
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "rootDir": "./",
+    "roots": [
+      "src",
+      "pages",
+      "tests"
+    ]
   }
 }
